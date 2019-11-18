@@ -1,0 +1,93 @@
+.home-header{
+    display:flex;
+    flex-direction: column;
+    .home-header-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.6;
+        a{
+            text-decoration: none;
+            color: @orangered;
+            &:hover{
+                color:@mango;
+            }
+        }//h1 a
+        .call-to-action{
+            margin: 2rem;
+            width: 80%;
+            height: 5rem;
+            background-color: @blue;
+            border-color: @mango;
+            transition-duration: 0.4s;
+            &:hover{
+                background-color: @orangered;
+                color: @alienBlue
+            }//.call-to-action:hover
+            a{
+                text-decoration: none;
+                font-size: 2.4rem;
+                font-weight: bold;
+                color: @mango;
+                letter-spacing: 0.2rem;
+            }//a
+        }//.call-to-action
+    }//.home-header-text
+    .home-header-img{
+        display: flex;
+        align-items: center;
+        padding:1.6rem 0;
+        img{
+            margin: 0 auto;
+            width: 50%;
+        }//img
+    }//.home-header-img
+}//.home-header
+.home-top-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 5%;
+    margin-top: 2rem;
+    background-color: @mint;
+    border-top: 2px solid @orangered;
+    .whatWeDo{
+        padding-bottom: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding:1rem;
+        }//h2
+    }//whatWeDo
+    .howWeDoIt{
+        padding-bottom: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding:1rem;
+        }//h2
+    }//.howWeDoIt
+}//.home-top-content
+.home-bot-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    margin-bottom: 2rem 0;
+    background-color: @teal;
+    border-top: 2px solid @orangered;
+    .whyWeDoIt{
+        padding-bottom: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding:1rem;
+        }//h2
+    }//whatWeDo
+    .howYouUseIt{
+        padding-bottom: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding:1rem;
+        }//h2
+    }//.howWeDoIt
+}//.home-top-content
