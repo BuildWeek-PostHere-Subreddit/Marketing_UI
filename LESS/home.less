@@ -1,11 +1,23 @@
 .home-header{
     display:flex;
     flex-direction: column;
+    @media @tablet{
+        flex-direction: row;
+    }//.home-header-tablet
+    @media @desktop{
+        max-width: 80%;
+        margin: 0 auto;
+    }
     .home-header-text{
         display: flex;
         flex-direction: column;
         align-items: center;
         line-height: 1.6;
+        @media @tablet{
+            width:48%;
+            padding:3rem 0 0 5%;
+            text-align: center;
+        }//.home-header-test-tablet
         a{
             text-decoration: none;
             color: @orangered;
@@ -37,9 +49,16 @@
         display: flex;
         align-items: center;
         padding:1.6rem 0;
+        @media @tablet{
+            justify-content: center;
+            width:48%;
+        }//.home-header-img-tablet
         img{
             margin: 0 auto;
             width: 50%;
+            @media @tablet{
+                width:90%;
+            }//img-tablet
         }//img
     }//.home-header-img
 }//.home-header
@@ -50,44 +69,73 @@
     margin-top: 2rem;
     background-color: @mint;
     border-top: 2px solid @orangered;
+    @media @tablet{
+        flex-direction:row;
+        justify-content: space-between;
+    }//.home-top-content-tablet
     .whatWeDo{
         padding-bottom: 1.6rem;
         display: flex;
         flex-direction: column;
+        @media @tablet{
+            width: 48%;
+        }//.whatWeDo-Tablet
         h2{
             padding:1rem;
+            color:@mango;
+            font-weight: bold;
         }//h2
     }//whatWeDo
     .howWeDoIt{
         padding-bottom: 1.6rem;
         display: flex;
         flex-direction: column;
+        @media @tablet{
+            width: 48%;
+        }//.howWeDoIt-tablet
         h2{
             padding:1rem;
+            color:@mango;
+            font-weight: bold;
         }//h2
     }//.howWeDoIt
 }//.home-top-content
 .home-bot-content{
     display: flex;
     flex-direction: column;
-    padding: 1.6rem;
+    padding: 1.6rem 5%;
     margin-bottom: 2rem 0;
     background-color: @teal;
     border-top: 2px solid @orangered;
+    border-bottom: 2px solid @orangered;
+    @media @tablet{
+        flex-direction:row;
+        justify-content: space-between;
+    }//.home-bot-content-tablet
     .whyWeDoIt{
         padding-bottom: 1.6rem;
         display: flex;
         flex-direction: column;
+        @media @tablet{
+            width: 48%;
+        }//.whyWeDoIt-tablet
         h2{
             padding:1rem;
+            color:@mango;
+            font-weight: bold;
         }//h2
     }//whatWeDo
     .howYouUseIt{
         padding-bottom: 1.6rem;
         display: flex;
         flex-direction: column;
+        @media @tablet{
+            width: 48%;
+        }//.howYouUseIt-tablet
         h2{
             padding:1rem;
+            color:@mango;
+            font-weight: bold;
         }//h2
     }//.howWeDoIt
 }//.home-top-content
