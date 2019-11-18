@@ -152,21 +152,52 @@ h6 {
 }
 nav {
   display: flex;
-  font-size: 2rem;
+  flex-direction: column;
+  background-color: #0079D3;
+}
+@media (min-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+}
+nav .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  nav .logo {
+    width: 65%;
+  }
+}
+nav .logo img {
+  width: 30%;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  nav .logo img {
+    width: 30%;
+  }
+}
+nav .links {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  padding: 1.3%;
+  padding: 1.6rem 10%;
 }
-.topnav {
-  display: flex;
-  border: 2px solid green;
+@media (min-width: 800px) {
+  nav .links {
+    align-items: center;
+    padding: 0 5% 0 0;
+  }
 }
-.bottomnav {
-  display: flex;
-  border: 2px solid gray;
+nav .links a {
+  text-decoration: none;
+  color: #ffb000;
+  font-size: 2rem;
+}
+nav .links a:hover {
+  color: #00a6a5;
 }
 header {
   display: inline-block;
@@ -213,4 +244,167 @@ body h2 {
   margin-bottom: 1rem;
   border: 2px solid purple;
   padding: 2%;
+}
+.home-header {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .home-header {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .home-header {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.home-header .home-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+}
+@media (min-width: 800px) {
+  .home-header .home-header-text {
+    width: 48%;
+    padding: 3rem 0 0 5%;
+    text-align: center;
+  }
+}
+.home-header .home-header-text a {
+  text-decoration: none;
+  color: #ff4500;
+}
+.home-header .home-header-text a:hover {
+  color: #ffb000;
+}
+.home-header .home-header-text .call-to-action {
+  margin: 2rem;
+  width: 80%;
+  height: 5rem;
+  background-color: #2492DF;
+  border-color: #ffb000;
+  transition-duration: 0.4s;
+}
+.home-header .home-header-text .call-to-action:hover {
+  background-color: #ff4500;
+  color: #0079D3;
+}
+.home-header .home-header-text .call-to-action a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffb000;
+  letter-spacing: 0.2rem;
+}
+.home-header .home-header-img {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+@media (min-width: 800px) {
+  .home-header .home-header-img {
+    justify-content: center;
+    width: 48%;
+  }
+}
+.home-header .home-header-img img {
+  margin: 0 auto;
+  width: 50%;
+}
+@media (min-width: 800px) {
+  .home-header .home-header-img img {
+    width: 90%;
+  }
+}
+.home-top-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 5%;
+  margin-top: 2rem;
+  background-color: #0DC5AD;
+  border-top: 2px solid #ff4500;
+}
+@media (min-width: 800px) {
+  .home-top-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.home-top-content .whatWeDo {
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .home-top-content .whatWeDo {
+    width: 48%;
+  }
+}
+.home-top-content .whatWeDo h2 {
+  padding: 1rem;
+  color: #ffb000;
+  font-weight: bold;
+}
+.home-top-content .howWeDoIt {
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .home-top-content .howWeDoIt {
+    width: 48%;
+  }
+}
+.home-top-content .howWeDoIt h2 {
+  padding: 1rem;
+  color: #ffb000;
+  font-weight: bold;
+}
+.home-bot-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 5%;
+  margin-bottom: 2rem 0;
+  background-color: #00a6a5;
+  border-top: 2px solid #ff4500;
+  border-bottom: 2px solid #ff4500;
+}
+@media (min-width: 800px) {
+  .home-bot-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.home-bot-content .whyWeDoIt {
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .home-bot-content .whyWeDoIt {
+    width: 48%;
+  }
+}
+.home-bot-content .whyWeDoIt h2 {
+  padding: 1rem;
+  color: #ffb000;
+  font-weight: bold;
+}
+.home-bot-content .howYouUseIt {
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .home-bot-content .howYouUseIt {
+    width: 48%;
+  }
+}
+.home-bot-content .howYouUseIt h2 {
+  padding: 1rem;
+  color: #ffb000;
+  font-weight: bold;
 }
