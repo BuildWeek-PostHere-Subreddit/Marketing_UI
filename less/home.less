@@ -7,41 +7,50 @@
     @media @desktop{
         max-width: 80%;
         margin: 0 auto;
+        justify-content: space-between;
     }
     .home-header-text{
         display: flex;
         flex-direction: column;
         align-items: center;
         line-height: 1.6;
+        text-align: center;
         @media @tablet{
             width:48%;
             padding:3rem 0 0 5%;
-            text-align: center;
+            
         }//.home-header-test-tablet
         a{
             text-decoration: none;
-            color: @orangered;
+            color: @title-a;
+            display: block;
+            text-align: center;
             &:hover{
-                color:@mango;
+                color:@title-aHover;
             }
         }//h1 a
         .call-to-action{
             margin: 2rem;
             width: 80%;
             height: 5rem;
-            background-color: @blue;
-            border-color: @mango;
+            background-color: @button-bg;
+            border: 3px solid @button-border;
             transition-duration: 0.4s;
+            border-radius: 15px;
             &:hover{
-                background-color: @orangered;
-                color: @alienBlue
+                background-color: @button-bgHover;
+                border-color: @button-borderHover;
             }//.call-to-action:hover
             a{
                 text-decoration: none;
                 font-size: 2.4rem;
                 font-weight: bold;
-                color: @mango;
+                color: @button-a;
                 letter-spacing: 0.2rem;
+                &:hover{
+                    color:@button-aHover;
+                    transition-duration: 0.4s;
+                }
             }//a
         }//.call-to-action
     }//.home-header-text
@@ -67,35 +76,26 @@
     flex-direction: column;
     padding: 1.6rem 5%;
     margin-top: 2rem;
-    background-color: @mint;
-    border-top: 2px solid @orangered;
+    background-color: @home-top-bg;
+    border-top: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
     }//.home-top-content-tablet
     .whatWeDo{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.whatWeDo-Tablet
+        .contentBox(@home-contentBox-Top, 15px);
         h2{
             padding:1rem;
-            color:@mango;
+            color:@home-h2;
             font-weight: bold;
         }//h2
     }//whatWeDo
     .howWeDoIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.howWeDoIt-tablet
+        .contentBox(@home-contentBox-Top, 15px);
+        margin-top: 2rem;
         h2{
             padding:1rem;
-            color:@mango;
+            color:@home-h2;
             font-weight: bold;
         }//h2
     }//.howWeDoIt
@@ -105,36 +105,26 @@
     flex-direction: column;
     padding: 1.6rem 5%;
     margin-bottom: 2rem 0;
-    background-color: @teal;
-    border-top: 2px solid @orangered;
-    border-bottom: 2px solid @orangered;
+    background-color: @home-bot-bg;
+    border-bottom: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
     }//.home-bot-content-tablet
     .whyWeDoIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.whyWeDoIt-tablet
+        .contentBox(@home-contentBox-Bot, 15px);
+        margin-bottom: 2rem;
         h2{
             padding:1rem;
-            color:@mango;
+            color:@home-h2;
             font-weight: bold;
         }//h2
     }//whatWeDo
     .howYouUseIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.howYouUseIt-tablet
+        .contentBox(@home-contentBox-Bot, 15px);
         h2{
             padding:1rem;
-            color:@mango;
+            color:@home-h2;
             font-weight: bold;
         }//h2
     }//.howWeDoIt
