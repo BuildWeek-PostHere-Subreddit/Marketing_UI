@@ -83,7 +83,7 @@
         justify-content: space-between;
     }//.home-top-content-tablet
     .whatWeDo{
-        .contentBox(@offWhite, 15px);
+        .contentBox(@home-contentBox-Top, 15px);
         h2{
             padding:1rem;
             color:@home-h2;
@@ -91,7 +91,7 @@
         }//h2
     }//whatWeDo
     .howWeDoIt{
-        .contentBox(@offWhite, 15px);
+        .contentBox(@home-contentBox-Top, 15px);
         margin-top: 2rem;
         h2{
             padding:1rem;
@@ -105,14 +105,14 @@
     flex-direction: column;
     padding: 1.6rem 5%;
     margin-bottom: 2rem 0;
-    background-color: @offWhite;
+    background-color: @home-bot-bg;
     border-bottom: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
     }//.home-bot-content-tablet
     .whyWeDoIt{
-        .contentBox(@home-bot-bg, 15px);
+        .contentBox(@home-contentBox-Bot, 15px);
         margin-bottom: 2rem;
         h2{
             padding:1rem;
@@ -121,7 +121,7 @@
         }//h2
     }//whatWeDo
     .howYouUseIt{
-        .contentBox(@home-bot-bg, 15px);
+        .contentBox(@home-contentBox-Bot, 15px);
         h2{
             padding:1rem;
             color:@home-h2;
