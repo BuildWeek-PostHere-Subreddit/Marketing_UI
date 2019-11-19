@@ -74,14 +74,17 @@
 .home-top-content{
     display: flex;
     flex-direction: column;
-    padding: 1.6rem 5%;
+    padding: 3.5rem 5%;
     margin-top: 2rem;
     background-color: @home-top-bg;
     border-top: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
-    }//.home-top-content-tablet
+    }//.home-top-content-@tablet
+    @media @desktop{
+        padding: 5rem 7%;
+    }//.home-top-content-@desktop
     .whatWeDo{
         .contentBox(@home-contentBox-Top, 15px);
         h2{
@@ -103,14 +106,17 @@
 .home-bot-content{
     display: flex;
     flex-direction: column;
-    padding: 1.6rem 5%;
+    padding: 3.5rem 5%;
     margin-bottom: 2rem 0;
     background-color: @home-bot-bg;
     border-bottom: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
-    }//.home-bot-content-tablet
+    }//.home-bot-content-@tablet
+    @media @desktop{
+        padding: 5rem 7%;
+    }///home-bot-content-@desktop
     .whyWeDoIt{
         .contentBox(@home-contentBox-Bot, 15px);
         margin-bottom: 2rem;

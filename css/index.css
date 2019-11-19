@@ -131,7 +131,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #CCD1D7;
 }
 html,
 body {
@@ -160,7 +159,6 @@ nav {
   flex-direction: column;
   background-color: #0079D3;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #DAE0E6;
 }
 @media (min-width: 800px) {
   nav {
@@ -262,6 +260,9 @@ nav .links a:hover {
   border-radius: 0.5rem;
   padding: 2%;
 }
+.container {
+  background-color: #DAE0E6;
+}
 .home-header {
   display: flex;
   flex-direction: column;
@@ -347,7 +348,7 @@ nav .links a:hover {
 .home-top-content {
   display: flex;
   flex-direction: column;
-  padding: 1.6rem 5%;
+  padding: 3.5rem 5%;
   margin-top: 2rem;
   background-color: #DAE0E6;
   border-top: 2px solid #DAE0E6;
@@ -356,6 +357,11 @@ nav .links a:hover {
   .home-top-content {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  .home-top-content {
+    padding: 5rem 7%;
   }
 }
 .home-top-content .whatWeDo {
@@ -371,6 +377,11 @@ nav .links a:hover {
     width: 48%;
     padding: 1.6rem;
     margin: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .home-top-content .whatWeDo {
+    width: 45%;
   }
 }
 .home-top-content .whatWeDo h2 {
@@ -394,6 +405,11 @@ nav .links a:hover {
     margin: 0;
   }
 }
+@media (min-width: 1000px) {
+  .home-top-content .howWeDoIt {
+    width: 45%;
+  }
+}
 .home-top-content .howWeDoIt h2 {
   padding: 1rem;
   color: #ffb000;
@@ -402,7 +418,7 @@ nav .links a:hover {
 .home-bot-content {
   display: flex;
   flex-direction: column;
-  padding: 1.6rem 5%;
+  padding: 3.5rem 5%;
   margin-bottom: 2rem 0;
   background-color: #F8F9FA;
   border-bottom: 2px solid #DAE0E6;
@@ -411,6 +427,11 @@ nav .links a:hover {
   .home-bot-content {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  .home-bot-content {
+    padding: 5rem 7%;
   }
 }
 .home-bot-content .whyWeDoIt {
@@ -427,6 +448,11 @@ nav .links a:hover {
     width: 48%;
     padding: 1.6rem;
     margin: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .home-bot-content .whyWeDoIt {
+    width: 45%;
   }
 }
 .home-bot-content .whyWeDoIt h2 {
@@ -449,6 +475,11 @@ nav .links a:hover {
     margin: 0;
   }
 }
+@media (min-width: 1000px) {
+  .home-bot-content .howYouUseIt {
+    width: 45%;
+  }
+}
 .home-bot-content .howYouUseIt h2 {
   padding: 1rem;
   color: #ffb000;
@@ -459,6 +490,7 @@ nav .links a:hover {
   justify-content: space-between;
   padding: 3% 10% 2% 10%;
   background-color: #0079D3;
+  margin: 0;
 }
 .bottomnav a {
   text-decoration: none;
