@@ -34,11 +34,12 @@
             width: 80%;
             height: 5rem;
             background-color: @button-bg;
-            border-color: @button-border;
+            border: 3px solid @button-border;
             transition-duration: 0.4s;
             border-radius: 15px;
             &:hover{
                 background-color: @button-bgHover;
+                border-color: @button-borderHover;
             }//.call-to-action:hover
             a{
                 text-decoration: none;
@@ -46,6 +47,10 @@
                 font-weight: bold;
                 color: @button-a;
                 letter-spacing: 0.2rem;
+                &:hover{
+                    color:@button-aHover;
+                    transition-duration: 0.4s;
+                }
             }//a
         }//.call-to-action
     }//.home-header-text
@@ -78,12 +83,7 @@
         justify-content: space-between;
     }//.home-top-content-tablet
     .whatWeDo{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.whatWeDo-Tablet
+        .contentBox(@offWhite, 15px);
         h2{
             padding:1rem;
             color:@home-h2;
@@ -91,12 +91,8 @@
         }//h2
     }//whatWeDo
     .howWeDoIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.howWeDoIt-tablet
+        .contentBox(@offWhite, 15px);
+        margin-top: 2rem;
         h2{
             padding:1rem;
             color:@home-h2;
@@ -109,20 +105,15 @@
     flex-direction: column;
     padding: 1.6rem 5%;
     margin-bottom: 2rem 0;
-    background-color: @home-bot-bg;
-    border-top: 2px solid @content-border;
+    background-color: @offWhite;
     border-bottom: 2px solid @content-border;
     @media @tablet{
         flex-direction:row;
         justify-content: space-between;
     }//.home-bot-content-tablet
     .whyWeDoIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.whyWeDoIt-tablet
+        .contentBox(@home-bot-bg, 15px);
+        margin-bottom: 2rem;
         h2{
             padding:1rem;
             color:@home-h2;
@@ -130,12 +121,7 @@
         }//h2
     }//whatWeDo
     .howYouUseIt{
-        padding-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        @media @tablet{
-            width: 48%;
-        }//.howYouUseIt-tablet
+        .contentBox(@home-bot-bg, 15px);
         h2{
             padding:1rem;
             color:@home-h2;
