@@ -1,9 +1,11 @@
 nav{
     display: flex;
     flex-direction: column;
-    background-color:@alienBlue;
+    background-color:@nav-bg;
+    // max-height: 14rem;
     @media @tablet{
         flex-direction: row;
+        height: 6.5rem;
     }
     .logo{
         width:100%;
@@ -11,13 +13,13 @@ nav{
         justify-content: center;
         @media @desktop{
             width:65%;
-        }
+        }//.logo-desktop
         img{
             width:30%;
             margin: 0 auto;
-            @media @desktop{
-                width:30%;
-            }
+            @media @tablet{
+                width: 30%;
+            }//img-tablet
         }//img
     }//.logo
     .links{
@@ -32,10 +34,10 @@ nav{
        
         a{
             text-decoration: none;
-            color: @mango;
+            color: @nav-a;
             font-size: 2rem;
             &:hover{
-                color:@teal;
+                color:@nav-aHover;
             }//hover
         }//a
     }//.links
