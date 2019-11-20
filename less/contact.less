@@ -1,0 +1,42 @@
+.contactCont{
+    padding: 2rem 5%;
+    background-color: @contactCont-bg;
+}
+.contactHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media @desktop{
+        width:70%;
+        margin:0 auto;
+    }
+    h1{
+        color: @contact-h1
+    }//h1
+    p{
+        padding:3rem 0;
+        text-align: center;
+    }//p
+}//.contactHeader
+
+.contactBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    background-color: @contactBox-bg;
+    .contactForm{
+        width:70%;
+        padding:0 0 2rem 0;
+        input{
+            width:100%;
+        }
+        label{
+            color: @label;
+        }
+        textarea{
+            width:100%;
+            height: 16rem;
+        }
+    }
+}
