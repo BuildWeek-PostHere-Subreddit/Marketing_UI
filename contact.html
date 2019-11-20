@@ -32,25 +32,32 @@
             <div class="contactForm">
                 <form name="contact" method="POST" data-netlify="true">
                 
+                    <div class="name">
+                        <p> <label>Your Name: </label> </p>
+                        <p> <input type="text" name="name" placeholder="Name" class="name" /></p>
+                    </div>
+                    
+                    <div class="email">
+                        <p> <label>Your Email: </label> </p>
+                        <p> <input type="email" name="email" placeholder="Email" class="email" /></p>
+                    </div>
+
+                    <div class="feedback">
+                        <p> <label>Feedback: </label> </p>
+                        <p> <select name="feedback[]">
+                                <option value="love">Love It!</option>
+                                <option value="like">Like It!</option>
+                                <option value="hate">Hate it :(</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="message">
+                        <p><label>Message: </label> </p>
+                        <p> <textarea name="message" placeholder="Your Feedback is Valued!"></textarea> </p>
+                    </div>
                 
-                    <p> <label>Your Name: </label> </p>
-                    <p> <input type="text" name="name" placeholder="Name" class="name" /></p>
-                
-                    <p> <label>Your Email: </label> </p>
-                    <p> <input type="email" name="email" placeholder="Email" class="email" /></p>
-                
-                    <p> <label>Feedback: </label> </p>
-                    <p> <select name="feedback[]">
-                            <option value="love">Love It!</option>
-                            <option value="like">Like It!</option>
-                            <option value="hate">Hate it :(</option>
-                        </select>
-                    </p>
-                
-                    <p><label>Message: </label> </p>
-                    <p> <textarea name="message" placeholder="Your Feedback is Valued!"></textarea> </p>
-                
-                    <p> <button type="submit">Send It!</button> </p>
+                    <p class="buttonP"> <button type="submit" class="formButton">Send It!</button> </p>
                 
                 </form>
             </div>
