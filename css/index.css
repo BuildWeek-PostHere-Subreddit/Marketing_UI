@@ -154,6 +154,13 @@ h5,
 h6 {
   font-size: 2rem;
 }
+a {
+  text-decoration: none;
+  color: #00a6a5;
+}
+a:hover {
+  color: #ff4500;
+}
 nav {
   display: flex;
   flex-direction: column;
