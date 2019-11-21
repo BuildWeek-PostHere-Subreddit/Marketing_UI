@@ -452,7 +452,7 @@ nav .links a:hover {
   color: #ffb000;
 }
 .home-header .home-header-text .call-to-action {
-  margin: 2rem;
+  margin: 2.5rem;
   width: 80%;
   height: 5rem;
   background-color: #2492DF;
@@ -545,7 +545,7 @@ nav .links a:hover {
   }
 }
 .home-top-content .whatWeDo h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
@@ -571,7 +571,7 @@ nav .links a:hover {
   }
 }
 .home-top-content .howWeDoIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
@@ -625,7 +625,7 @@ nav .links a:hover {
   }
 }
 .home-bot-content .whyWeDoIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
@@ -650,7 +650,7 @@ nav .links a:hover {
   }
 }
 .home-bot-content .howYouUseIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
@@ -747,38 +747,41 @@ nav .links a:hover {
   color: #ff4500;
   transition-duration: 0.4s;
 }
-.bottomnav {
+footer {
+  background-color: #0079D3;
+}
+footer .bottomnav {
   flex-direction: row;
   justify-content: space-between;
   padding: 3% 10% 2% 10%;
   background-color: #0079D3;
   margin: 0;
 }
-.bottomnav a {
+footer .bottomnav a {
   text-decoration: none;
   color: #BFC3C9;
   font-size: 1.7rem;
 }
-.bottomnav a:hover {
+footer .bottomnav a:hover {
   color: black;
   opacity: 1;
   text-decoration: underline;
 }
-.copyright {
+footer .copyright {
   display: flex;
   justify-content: center;
   background-color: #0079D3;
-  padding: 5% 0 5% 0;
+  padding: 3rem 0 3rem 0;
   position: relative;
   width: 100%;
 }
-.LSlogo {
-  width: 30%;
+footer .LSlogo {
+  width: 40%;
   background-color: #0079D3;
   display: flex;
   margin: 0 auto;
   padding: 0 0 5% 0;
 }
-.footerimg {
+footer .footerimg {
   background-color: #0079D3;
 }
