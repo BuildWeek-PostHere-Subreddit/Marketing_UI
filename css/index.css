@@ -161,8 +161,7 @@ h3 {
   font-size: 2.4rem;
 }
 h4,
-h5,
-h6 {
+h5 {
   font-size: 2rem;
 }
 nav {
@@ -210,12 +209,12 @@ nav .links {
 }
 nav .links a {
   text-decoration: none;
-  color: #BFC3C9;
+  color: #F8F9FA;
   font-size: 1.7rem;
 }
 nav .links a:hover {
-  color: black;
-  opacity: 1;
+  color: #ff4500;
+  font-weight: bold;
   text-decoration: underline;
 }
 .container {
@@ -224,30 +223,20 @@ nav .links a:hover {
 .about-header {
   display: inline-block;
   border: 3px solid black;
-  border-radius: 1rem;
-  margin: 0 0 1rem 0;
+  padding: 0 5%;
   padding-top: 1%;
   width: 100%;
   padding-bottom: 2%;
+  text-align: center;
 }
 .about-header h1 {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  color: black;
-}
-@media (max-width: 636px) {
-  .about-header h1 {
-    position: relative;
-    left: 9rem;
-    max-width: 70%;
-  }
+  color: #ff4500;
+  padding: 2rem;
 }
 .about-header .headerpara {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
   position: relative;
   font-size: 1.5rem;
   margin-left: 1rem;
@@ -262,151 +251,75 @@ nav .links a:hover {
   flex-direction: column;
   width: 100%;
   border: 3px solid black;
-  border-radius: 1rem;
-  padding-right: 1%;
-  padding-left: 1%;
+  padding: 0 5% 5rem 5%;
+}
+@media (min-width: 800px) {
+  .body {
+    padding: 0 7%;
+  }
+}
+@media (min-width: 1000px) {
+  .body {
+    padding: 0 10%;
+  }
+}
+.body a {
+  text-decoration: none;
+  color: #0DC5AD;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.body a:hover {
+  color: #ff4500;
+}
+.body h1 {
+  color: #ff4500;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  padding: 2.5rem 0 5rem 0;
+  border-bottom: 1px dashed #F8F9FA;
+}
+.body .about-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5%;
+}
+.body .about-title img {
+  max-width: 25rem;
+  max-height: 25rem;
+  width: 25%;
+  border-radius: 15px;
+  margin: 3rem 0;
+}
+.body .top-title {
+  padding-top: 2.5rem;
+}
+.body div {
+  display: flex;
 }
 .body h2 {
   display: flex;
   justify-content: center;
+  width: 100%;
   margin-top: 2rem;
   padding: 1.3%;
   color: #ffb000;
   font-weight: bold;
-  padding: 0 20% 0 20%;
+  padding: 0 0% 0 0%;
+  text-align: center;
 }
 .body .bodypara {
-  display: flex;
-  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #FFFFFF;
   border: 1px solid grey;
   border-radius: 1.5rem;
-  padding: 2%;
+  padding: 2rem;
 }
 .container {
   background-color: #DAE0E6;
-}
-.groupmem1 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-right: 10%;
-}
-@media (min-width: 800px) {
-  .groupmem1 {
-    display: none;
-  }
-}
-.groupmem2 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-left: 10%;
-}
-@media (min-width: 800px) {
-  .groupmem2 {
-    display: none;
-  }
-}
-.groupmem3 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-right: 15%;
-}
-@media (min-width: 800px) {
-  .groupmem3 {
-    display: none;
-  }
-}
-.groupmem4 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-left: 20%;
-}
-@media (min-width: 800px) {
-  .groupmem4 {
-    display: none;
-  }
-}
-.groupmem5 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-right: 20%;
-}
-@media (min-width: 800px) {
-  .groupmem5 {
-    display: none;
-  }
-}
-.groupmem6 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-right: 10%;
-}
-@media (min-width: 800px) {
-  .groupmem6 {
-    display: none;
-  }
-}
-.groupmem7 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-left: 20%;
-}
-@media (min-width: 800px) {
-  .groupmem7 {
-    display: none;
-  }
-}
-.groupmem8 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-right: 10%;
-}
-@media (min-width: 800px) {
-  .groupmem8 {
-    display: none;
-  }
-}
-.groupmem9 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-left: 10%;
-}
-@media (min-width: 800px) {
-  .groupmem9 {
-    display: none;
-  }
-}
-.groupmem10 {
-  max-width: 30%;
-  max-height: 10rem;
-  padding: 2%;
-  border-radius: 1.5rem;
-  margin-left: 20%;
-}
-@media (min-width: 800px) {
-  .groupmem10 {
-    display: none;
-  }
 }
 .home-header {
   display: flex;
@@ -544,10 +457,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-top-content .whatWeDo .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-top-content .whatWeDo .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-top-content .whatWeDo h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-top-content .howWeDoIt {
   padding: 1.6rem;
@@ -570,10 +493,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-top-content .howWeDoIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-top-content .howWeDoIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-top-content .howWeDoIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-bot-content {
   display: flex;
@@ -624,10 +557,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-bot-content .whyWeDoIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-bot-content .whyWeDoIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-bot-content .whyWeDoIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-bot-content .howYouUseIt {
   padding: 1.6rem;
@@ -649,10 +592,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-bot-content .howYouUseIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-bot-content .howYouUseIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-bot-content .howYouUseIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .contactCont {
   padding: 2rem 5%;
@@ -668,6 +621,10 @@ nav .links a:hover {
     width: 70%;
     margin: 0 auto;
   }
+}
+.contactHeader img {
+  max-width: 8rem;
+  width: 15%;
 }
 .contactHeader h1 {
   color: #ff4500;
@@ -749,6 +706,7 @@ nav .links a:hover {
 }
 footer {
   background-color: #0079D3;
+  padding-bottom: 1rem;
 }
 footer .bottomnav {
   flex-direction: row;
@@ -759,12 +717,12 @@ footer .bottomnav {
 }
 footer .bottomnav a {
   text-decoration: none;
-  color: #BFC3C9;
+  color: #F8F9FA;
   font-size: 1.7rem;
 }
 footer .bottomnav a:hover {
-  color: black;
-  opacity: 1;
+  color: #ff4500;
+  font-weight: bold;
   text-decoration: underline;
 }
 footer .copyright {
