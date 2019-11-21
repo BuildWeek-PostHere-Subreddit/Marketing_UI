@@ -18,9 +18,12 @@
         text-align: center;
         @media @tablet{
             width:48%;
-            padding:3rem 0 0 5%;
-            
+            padding:0 0 0 5%;
+            justify-content: center;
         }//.home-header-test-tablet
+        h1{
+            padding:0 0 2rem 0;
+        }//h1
         a{
             text-decoration: none;
             color: @title-a;
@@ -28,10 +31,11 @@
             text-align: center;
             &:hover{
                 color:@title-aHover;
-            }
-        }//h1 a
+            }//title hover
+        }//title a
         .call-to-action{
-            .button(2rem, 80%, 5rem, 15px, 2.4rem)
+            .button(2.5rem, 80%, 5rem, 15px, 2.4rem);
+            
         }//.call-to-action
     }//.home-header-text
     .home-header-img{
@@ -40,7 +44,8 @@
         padding:1.6rem 0;
         @media @tablet{
             justify-content: center;
-            width:48%;
+            width:45%;
+            margin:0 0 0 5%;
         }//.home-header-img-tablet
         img{
             margin: 0 auto;
@@ -65,10 +70,13 @@
     @media @desktop{
         padding: 5rem 7%;
     }//.home-top-content-@desktop
+    a{
+        .in-lineA();
+    }//a
     .whatWeDo{
         .contentBox(@home-contentBox-Top, 15px);
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -77,7 +85,7 @@
         .contentBox(@home-contentBox-Top, 15px);
         margin-top: 2rem;
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -97,11 +105,14 @@
     @media @desktop{
         padding: 5rem 7%;
     }///home-bot-content-@desktop
+    a{
+        .in-lineA();
+    }//a
     .whyWeDoIt{
         .contentBox(@home-contentBox-Bot, 15px);
         margin-bottom: 2rem;
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -109,7 +120,7 @@
     .howYouUseIt{
         .contentBox(@home-contentBox-Bot, 15px);
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
