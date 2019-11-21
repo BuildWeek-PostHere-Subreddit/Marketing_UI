@@ -161,8 +161,7 @@ h3 {
   font-size: 2.4rem;
 }
 h4,
-h5,
-h6 {
+h5 {
   font-size: 2rem;
 }
 nav {
@@ -210,12 +209,12 @@ nav .links {
 }
 nav .links a {
   text-decoration: none;
-  color: #BFC3C9;
+  color: #F8F9FA;
   font-size: 1.7rem;
 }
 nav .links a:hover {
-  color: black;
-  opacity: 1;
+  color: #ff4500;
+  font-weight: bold;
   text-decoration: underline;
 }
 .container {
@@ -544,10 +543,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-top-content .whatWeDo .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-top-content .whatWeDo .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-top-content .whatWeDo h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-top-content .howWeDoIt {
   padding: 1.6rem;
@@ -570,10 +579,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-top-content .howWeDoIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-top-content .howWeDoIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-top-content .howWeDoIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-bot-content {
   display: flex;
@@ -624,10 +643,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-bot-content .whyWeDoIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-bot-content .whyWeDoIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-bot-content .whyWeDoIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .home-bot-content .howYouUseIt {
   padding: 1.6rem;
@@ -649,10 +678,20 @@ nav .links a:hover {
     width: 45%;
   }
 }
+.home-bot-content .howYouUseIt .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.4rem 0 2rem 0;
+}
+.home-bot-content .howYouUseIt .icon img {
+  width: 15%;
+  max-width: 8rem;
+}
 .home-bot-content .howYouUseIt h2 {
   padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 .contactCont {
   padding: 2rem 5%;
@@ -668,6 +707,10 @@ nav .links a:hover {
     width: 70%;
     margin: 0 auto;
   }
+}
+.contactHeader img {
+  max-width: 8rem;
+  width: 15%;
 }
 .contactHeader h1 {
   color: #ff4500;
@@ -749,6 +792,7 @@ nav .links a:hover {
 }
 footer {
   background-color: #0079D3;
+  padding-bottom: 1rem;
 }
 footer .bottomnav {
   flex-direction: row;
@@ -759,12 +803,12 @@ footer .bottomnav {
 }
 footer .bottomnav a {
   text-decoration: none;
-  color: #BFC3C9;
+  color: #F8F9FA;
   font-size: 1.7rem;
 }
 footer .bottomnav a:hover {
-  color: black;
-  opacity: 1;
+  color: #ff4500;
+  font-weight: bold;
   text-decoration: underline;
 }
 footer .copyright {

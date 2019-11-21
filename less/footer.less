@@ -1,5 +1,6 @@
 footer{
     background-color: @nav-bg;
+    padding-bottom: 1rem;
     .bottomnav {
         flex-direction: row;
         justify-content: space-between;
@@ -8,11 +9,11 @@ footer{
         margin: 0;
             a {
                 text-decoration: none;
-                color: @backgroundgrey;
+                color: @nav-a;
                 font-size: 1.7rem;
                 &:hover{
-                    color:black;
-                    opacity: 1;
+                    color:@nav-aHover;
+                   font-weight: bold;
                     text-decoration: underline;
                 }//hover
             }
