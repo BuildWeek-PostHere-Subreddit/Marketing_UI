@@ -21,9 +21,65 @@
         </div>
     </nav>
 
-    <p>future contact form here</p>
+    <div class="contactCont">
+        
+        <header class="contactHeader">
+            <h1>Contact Us!</h1>
+            <p>We value your feedback! Good and bad! It helps us improve and lets us know what we got right! So post your feedback below for PostHere!</p>
+        </header>
+
+        <section class="contactBox">
+            <div class="contactForm">
+                <form name="contact" method="POST" data-netlify="true">
+                
+                    <div class="name">
+                        <p> <label>Your Name: </label> </p>
+                        <p> <input type="text" name="name" placeholder="Name" class="name" /></p>
+                    </div>
+                    
+                    <div class="email">
+                        <p> <label>Your Email: </label> </p>
+                        <p> <input type="email" name="email" placeholder="Email" class="email" /></p>
+                    </div>
+
+                    <div class="feedback">
+                        <p> <label>Feedback: </label> </p>
+                        <p> <select name="feedback[]">
+                                <option value="love">Love It!</option>
+                                <option value="like">Like It!</option>
+                                <option value="hate">Hate it :(</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="message">
+                        <p><label>Message: </label> </p>
+                        <p> <textarea name="message" placeholder="Your Feedback is Valued!"></textarea> </p>
+                    </div>
+                
+                    <p class="buttonP"> <button type="submit" class="formButton">Send It!</button> </p>
+                
+                </form>
+            </div>
+        </section>
+    </div>
 
 
-    <footer></footer>
+    <footer>
+        <nav class= "bottomnav">
+            <a href="index.html">Home<br></a>
+            <a href="about.html">About<br></a>
+            <a href="contact.html">Contact<br></a>
+            <a href="https://post-here-subreddit.netlify.com/">Log In<br></a>
+        </nav>
+        
+        <div class= "copyright">
+            <p>-Built by Lambda Students, 2019-</p>
+        </div>
+        
+        <div class="footerimg">
+            <img src="img/LambdaLOGO2.png" class="LSlogo" alt="Picture of the lambda logo">
+        </div>
+    </footer>
 </body>
 </html>

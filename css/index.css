@@ -154,27 +154,27 @@ h5,
 h6 {
   font-size: 2rem;
 }
+a {
+  text-decoration: none;
+  color: #00a6a5;
+}
+a:hover {
+  color: #ff4500;
+}
 nav {
   display: flex;
   flex-direction: column;
   background-color: #0079D3;
-  margin-bottom: 2rem;
 }
 @media (min-width: 800px) {
   nav {
     flex-direction: row;
-    height: 6.5rem;
   }
 }
 nav .logo {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-@media (min-width: 1000px) {
-  nav .logo {
-    width: 65%;
-  }
 }
 nav .logo img {
   width: 30%;
@@ -183,6 +183,11 @@ nav .logo img {
 @media (min-width: 800px) {
   nav .logo img {
     width: 30%;
+  }
+}
+@media (min-width: 1000px) {
+  nav .logo img {
+    max-width: 14.5rem;
   }
 }
 nav .links {
@@ -400,6 +405,7 @@ nav .links a:hover {
 .home-header {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
 }
 @media (min-width: 800px) {
   .home-header {
@@ -618,6 +624,90 @@ nav .links a:hover {
   padding: 1rem;
   color: #ffb000;
   font-weight: bold;
+}
+.contactCont {
+  padding: 2rem 5%;
+  background-color: #F8F9FA;
+}
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .contactHeader {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.contactHeader h1 {
+  color: #ff4500;
+}
+.contactHeader p {
+  padding: 3rem 0;
+  text-align: center;
+}
+.contactBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #F8F9FA;
+}
+.contactBox .contactForm {
+  width: 70%;
+  padding: 0 0 2rem 0;
+}
+.contactBox .contactForm div {
+  margin: 1.5rem 0;
+}
+.contactBox .contactForm input {
+  width: 100%;
+  height: 3rem;
+  vertical-align: middle;
+}
+.contactBox .contactForm label {
+  color: #ff4500;
+}
+.contactBox .contactForm textarea {
+  width: 100%;
+  height: 16rem;
+}
+.contactBox .contactForm .buttonP {
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+.contactBox .contactForm .buttonP .formButton {
+  margin: 2rem;
+  width: 80%;
+  height: 5rem;
+  background-color: #2492DF;
+  border: 3px solid #DAE0E6;
+  transition-duration: 0.4s;
+  border-radius: 15px;
+  font-size: 2.4rem;
+  color: #DAE0E6;
+  letter-spacing: 0.4rem;
+}
+.contactBox .contactForm .buttonP .formButton:hover {
+  background-color: #ffb000;
+  border-color: #ff4500;
+}
+.contactBox .contactForm .buttonP .formButton a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #DAE0E6;
+  letter-spacing: 0.2rem;
+}
+.contactBox .contactForm .buttonP .formButton a:hover {
+  color: #ff4500;
+  transition-duration: 0.4s;
+}
+.contactBox .contactForm .buttonP .formButton:hover {
+  color: #ff4500;
+  transition-duration: 0.4s;
 }
 .bottomnav {
   flex-direction: row;

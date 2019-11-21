@@ -1,6 +1,7 @@
 .home-header{
     display:flex;
     flex-direction: column;
+    padding-top: 2rem;
     @media @tablet{
         flex-direction: row;
     }//.home-header-tablet
@@ -30,28 +31,7 @@
             }
         }//h1 a
         .call-to-action{
-            margin: 2rem;
-            width: 80%;
-            height: 5rem;
-            background-color: @button-bg;
-            border: 3px solid @button-border;
-            transition-duration: 0.4s;
-            border-radius: 15px;
-            &:hover{
-                background-color: @button-bgHover;
-                border-color: @button-borderHover;
-            }//.call-to-action:hover
-            a{
-                text-decoration: none;
-                font-size: 2.4rem;
-                font-weight: bold;
-                color: @button-a;
-                letter-spacing: 0.2rem;
-                &:hover{
-                    color:@button-aHover;
-                    transition-duration: 0.4s;
-                }
-            }//a
+            .button(2rem, 80%, 5rem, 15px, 2.4rem)
         }//.call-to-action
     }//.home-header-text
     .home-header-img{
@@ -106,7 +86,7 @@
 .home-bot-content{
     display: flex;
     flex-direction: column;
-    padding: 3.5git statusrem 5%;
+    padding: 3.5rem 5%;
     margin-bottom: 2rem 0;
     background-color: @home-bot-bg;
     border-bottom: 2px solid @content-border;
