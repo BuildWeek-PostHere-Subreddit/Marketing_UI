@@ -1,5 +1,5 @@
 .contentBox(@bg, @radius){
-    padding-bottom: 1.6rem;
+    padding: 1.6rem;
     display: flex;
     flex-direction: column;
     background-color: @bg;
@@ -14,3 +14,38 @@
         width:45%;
     }//.contentBox-desktop
 }//.contentBox
+
+.button(@margin, @width, @height, @radius, @font-size){
+    margin: @margin;
+    width: @width;
+    height: @height;
+    background-color: @button-bg;
+    border: 3px solid @button-border;
+    transition-duration: 0.4s;
+    border-radius: @radius;
+    &:hover{
+        background-color: @button-bgHover;
+        border-color: @button-borderHover;
+    }//.call-to-action:hover
+    a{
+        text-decoration: none;
+        font-size: @font-size;
+        font-weight: bold;
+        color: @button-a;
+        letter-spacing: 0.2rem;
+        &:hover{
+            color:@button-aHover;
+            transition-duration: 0.4s;
+        }//hover
+    }//a
+}//.button
+
+.in-lineA{
+    text-decoration: none;
+    color: @mint;
+    font-size:1.8rem;
+    font-weight: bold;
+    &:hover{
+        color: @orangered;
+    }
+}

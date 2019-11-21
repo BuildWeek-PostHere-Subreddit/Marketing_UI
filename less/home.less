@@ -1,6 +1,7 @@
 .home-header{
     display:flex;
     flex-direction: column;
+    padding-top: 2rem;
     @media @tablet{
         flex-direction: row;
     }//.home-header-tablet
@@ -17,9 +18,12 @@
         text-align: center;
         @media @tablet{
             width:48%;
-            padding:3rem 0 0 5%;
-            
+            padding:0 0 0 5%;
+            justify-content: center;
         }//.home-header-test-tablet
+        h1{
+            padding:0 0 2rem 0;
+        }//h1
         a{
             text-decoration: none;
             color: @title-a;
@@ -27,31 +31,11 @@
             text-align: center;
             &:hover{
                 color:@title-aHover;
-            }
-        }//h1 a
+            }//title hover
+        }//title a
         .call-to-action{
-            margin: 2rem;
-            width: 80%;
-            height: 5rem;
-            background-color: @button-bg;
-            border: 3px solid @button-border;
-            transition-duration: 0.4s;
-            border-radius: 15px;
-            &:hover{
-                background-color: @button-bgHover;
-                border-color: @button-borderHover;
-            }//.call-to-action:hover
-            a{
-                text-decoration: none;
-                font-size: 2.4rem;
-                font-weight: bold;
-                color: @button-a;
-                letter-spacing: 0.2rem;
-                &:hover{
-                    color:@button-aHover;
-                    transition-duration: 0.4s;
-                }
-            }//a
+            .button(2.5rem, 80%, 5rem, 15px, 2.4rem);
+            
         }//.call-to-action
     }//.home-header-text
     .home-header-img{
@@ -60,7 +44,8 @@
         padding:1.6rem 0;
         @media @tablet{
             justify-content: center;
-            width:48%;
+            width:45%;
+            margin:0 0 0 5%;
         }//.home-header-img-tablet
         img{
             margin: 0 auto;
@@ -85,10 +70,13 @@
     @media @desktop{
         padding: 5rem 7%;
     }//.home-top-content-@desktop
+    a{
+        .in-lineA();
+    }//a
     .whatWeDo{
         .contentBox(@home-contentBox-Top, 15px);
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -97,7 +85,7 @@
         .contentBox(@home-contentBox-Top, 15px);
         margin-top: 2rem;
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -106,7 +94,7 @@
 .home-bot-content{
     display: flex;
     flex-direction: column;
-    padding: 3.5git statusrem 5%;
+    padding: 3.5rem 5%;
     margin-bottom: 2rem 0;
     background-color: @home-bot-bg;
     border-bottom: 2px solid @content-border;
@@ -117,11 +105,14 @@
     @media @desktop{
         padding: 5rem 7%;
     }///home-bot-content-@desktop
+    a{
+        .in-lineA();
+    }//a
     .whyWeDoIt{
         .contentBox(@home-contentBox-Bot, 15px);
         margin-bottom: 2rem;
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2
@@ -129,7 +120,7 @@
     .howYouUseIt{
         .contentBox(@home-contentBox-Bot, 15px);
         h2{
-            padding:1rem;
+            padding:1.5rem;
             color:@home-h2;
             font-weight: bold;
         }//h2

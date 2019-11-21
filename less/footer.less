@@ -1,35 +1,38 @@
-.bottomnav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3% 10% 2% 10%;
-    background-color: @alienBlue;
-    margin: 0;
-        a {
-            text-decoration: none;
-            color: @backgroundgrey;
-            font-size: 1.7rem;
-            &:hover{
-                color:black;
-                opacity: 1;
-                text-decoration: underline;
-            }//hover
-        }
-}
-.copyright {
-    display: flex;
-    justify-content: center;
-    background-color:@alienBlue;
-    padding: 5% 0 5% 0;
-    position: relative;
-    width: 100%;
-}
-.LSlogo {
-    width: 30%;
-    background-color: @alienBlue;
-    display: flex;
-    margin: 0 auto;
-    padding: 0 0 5% 0;
-}
-.footerimg {
-    background-color: @alienBlue;
-}
+footer{
+    background-color: @nav-bg;
+    .bottomnav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3% 10% 2% 10%;
+        background-color: @alienBlue;
+        margin: 0;
+            a {
+                text-decoration: none;
+                color: @backgroundgrey;
+                font-size: 1.7rem;
+                &:hover{
+                    color:black;
+                    opacity: 1;
+                    text-decoration: underline;
+                }//hover
+            }
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        background-color:@alienBlue;
+        padding: 3rem 0 3rem 0;
+        position: relative;
+        width: 100%;
+    }
+    .LSlogo {
+        width: 40%;
+        background-color: @alienBlue;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 0 5% 0;
+    }
+    .footerimg {
+        background-color: @alienBlue;
+    }
+}//footer

@@ -2,24 +2,24 @@ nav{
     display: flex;
     flex-direction: column;
     background-color:@nav-bg;
-    margin-bottom: 2rem;
     @media @tablet{
         flex-direction: row;
-        height: 6.5rem;
     }
     .logo{
         width:100%;
         display:flex;
         justify-content: center;
-        @media @desktop{
-            width:65%;
-        }//.logo-desktop
         img{
-            width:30%;
+            width:50%;
             margin: 0 auto;
             @media @tablet{
-                width: 30%;
+                width: 55%;
+                padding: 1rem 0;
             }//img-tablet
+            @media @desktop{
+                max-width: 34.5rem;
+                width:50%;
+            }
         }//img
     }//.logo
     .links{

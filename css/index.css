@@ -1,3 +1,12 @@
+.in-lineA {
+  text-decoration: none;
+  color: #0DC5AD;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.in-lineA:hover {
+  color: #ff4500;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +144,7 @@ html {
 html,
 body {
   font-family: 'Tomorrow', sans-serif;
+  min-width: 315px;
 }
 p {
   line-height: 1.5;
@@ -142,6 +152,7 @@ p {
 }
 h1 {
   font-size: 4rem;
+  font-weight: bold;
 }
 h2 {
   font-size: 2.8rem;
@@ -158,12 +169,10 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #0079D3;
-  margin-bottom: 2rem;
 }
 @media (min-width: 800px) {
   nav {
     flex-direction: row;
-    height: 6.5rem;
   }
 }
 nav .logo {
@@ -171,18 +180,20 @@ nav .logo {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 1000px) {
-  nav .logo {
-    width: 65%;
-  }
-}
 nav .logo img {
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 @media (min-width: 800px) {
   nav .logo img {
-    width: 30%;
+    width: 55%;
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 1000px) {
+  nav .logo img {
+    max-width: 34.5rem;
+    width: 50%;
   }
 }
 nav .links {
@@ -408,6 +419,7 @@ nav .links a:hover {
 .home-header {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
 }
 @media (min-width: 800px) {
   .home-header {
@@ -431,8 +443,12 @@ nav .links a:hover {
 @media (min-width: 800px) {
   .home-header .home-header-text {
     width: 48%;
-    padding: 3rem 0 0 5%;
+    padding: 0 0 0 5%;
+    justify-content: center;
   }
+}
+.home-header .home-header-text h1 {
+  padding: 0 0 2rem 0;
 }
 .home-header .home-header-text a {
   text-decoration: none;
@@ -444,7 +460,7 @@ nav .links a:hover {
   color: #ffb000;
 }
 .home-header .home-header-text .call-to-action {
-  margin: 2rem;
+  margin: 2.5rem;
   width: 80%;
   height: 5rem;
   background-color: #2492DF;
@@ -475,7 +491,8 @@ nav .links a:hover {
 @media (min-width: 800px) {
   .home-header .home-header-img {
     justify-content: center;
-    width: 48%;
+    width: 45%;
+    margin: 0 0 0 5%;
   }
 }
 .home-header .home-header-img img {
@@ -506,8 +523,17 @@ nav .links a:hover {
     padding: 5rem 7%;
   }
 }
+.home-top-content a {
+  text-decoration: none;
+  color: #0DC5AD;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.home-top-content a:hover {
+  color: #ff4500;
+}
 .home-top-content .whatWeDo {
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   background-color: #F8F9FA;
@@ -527,12 +553,12 @@ nav .links a:hover {
   }
 }
 .home-top-content .whatWeDo h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
 .home-top-content .howWeDoIt {
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   background-color: #F8F9FA;
@@ -553,14 +579,14 @@ nav .links a:hover {
   }
 }
 .home-top-content .howWeDoIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
 .home-bot-content {
   display: flex;
   flex-direction: column;
-  padding: 3.5git statusrem 5%;
+  padding: 3.5rem 5%;
   margin-bottom: 2rem 0;
   background-color: #F8F9FA;
   border-bottom: 2px solid #DAE0E6;
@@ -576,8 +602,17 @@ nav .links a:hover {
     padding: 5rem 7%;
   }
 }
+.home-bot-content a {
+  text-decoration: none;
+  color: #0DC5AD;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.home-bot-content a:hover {
+  color: #ff4500;
+}
 .home-bot-content .whyWeDoIt {
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   background-color: #DAE0E6;
@@ -598,12 +633,12 @@ nav .links a:hover {
   }
 }
 .home-bot-content .whyWeDoIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
 .home-bot-content .howYouUseIt {
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   background-color: #DAE0E6;
@@ -623,42 +658,138 @@ nav .links a:hover {
   }
 }
 .home-bot-content .howYouUseIt h2 {
-  padding: 1rem;
+  padding: 1.5rem;
   color: #ffb000;
   font-weight: bold;
 }
-.bottomnav {
+.contactCont {
+  padding: 2rem 5%;
+  background-color: #F8F9FA;
+}
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .contactHeader {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.contactHeader h1 {
+  color: #ff4500;
+}
+.contactHeader p {
+  padding: 3rem 0;
+  text-align: center;
+}
+.contactHeader a {
+  text-decoration: none;
+  color: #0DC5AD;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.contactHeader a:hover {
+  color: #ff4500;
+}
+.contactBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #F8F9FA;
+}
+.contactBox .contactForm {
+  width: 70%;
+  padding: 0 0 2rem 0;
+}
+.contactBox .contactForm div {
+  margin: 1.5rem 0;
+}
+.contactBox .contactForm input {
+  width: 100%;
+  height: 3rem;
+  vertical-align: middle;
+}
+.contactBox .contactForm label {
+  color: #ff4500;
+}
+.contactBox .contactForm textarea {
+  width: 100%;
+  height: 16rem;
+}
+.contactBox .contactForm .buttonP {
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+.contactBox .contactForm .buttonP .formButton {
+  margin: 2rem;
+  width: 80%;
+  height: 5rem;
+  background-color: #2492DF;
+  border: 3px solid #DAE0E6;
+  transition-duration: 0.4s;
+  border-radius: 15px;
+  font-size: 2.4rem;
+  color: #DAE0E6;
+  letter-spacing: 0.4rem;
+}
+.contactBox .contactForm .buttonP .formButton:hover {
+  background-color: #ffb000;
+  border-color: #ff4500;
+}
+.contactBox .contactForm .buttonP .formButton a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #DAE0E6;
+  letter-spacing: 0.2rem;
+}
+.contactBox .contactForm .buttonP .formButton a:hover {
+  color: #ff4500;
+  transition-duration: 0.4s;
+}
+.contactBox .contactForm .buttonP .formButton:hover {
+  color: #ff4500;
+  transition-duration: 0.4s;
+}
+footer {
+  background-color: #0079D3;
+}
+footer .bottomnav {
   flex-direction: row;
   justify-content: space-between;
   padding: 3% 10% 2% 10%;
   background-color: #0079D3;
   margin: 0;
 }
-.bottomnav a {
+footer .bottomnav a {
   text-decoration: none;
   color: #BFC3C9;
   font-size: 1.7rem;
 }
-.bottomnav a:hover {
+footer .bottomnav a:hover {
   color: black;
   opacity: 1;
   text-decoration: underline;
 }
-.copyright {
+footer .copyright {
   display: flex;
   justify-content: center;
   background-color: #0079D3;
-  padding: 5% 0 5% 0;
+  padding: 3rem 0 3rem 0;
   position: relative;
   width: 100%;
 }
-.LSlogo {
-  width: 30%;
+footer .LSlogo {
+  width: 40%;
   background-color: #0079D3;
   display: flex;
   margin: 0 auto;
   padding: 0 0 5% 0;
 }
-.footerimg {
+footer .footerimg {
   background-color: #0079D3;
 }
